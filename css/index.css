@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(./../img/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-section {
+    height: 70%;
+    width: 30%;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #686D76;
+    color: #fff;
+    border: none;
+    border-radius: 1000px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #2E2B41;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+}
+
+form {
+    width: min(400px, 100%);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+form>div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form label {
+    flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: #686D76;
+    fill: white;
+    color: white;
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+form input {
+    flex-grow: 1;
+    height: 50px;
+    padding: 24px;
+    font: inherit;
+    border-radius: 0 10px 10px 0;
+    border: 2px solid #F3F0FF;
+    border-left: none;
+    background-color: #F3F0FF;
+    transition: 0.2s ease;
+}
+
+form input:hover {
+    border-color: #686D76;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #2E2B41;
+}
+
+div:has(input:focus)>label {
+    background-color: #2E2B41;
+}
+
+form input::placeholder {
+    color: #2E2B41;
+}
+
+form button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 1000px;
+    padding: 14px 64px;
+    background-color: #686D76;
+    color: white;
+    font: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+form button:hover {
+    background-color: #2E2B41;
+}
+
+form button:focus {
+    outline: none;
+    background-color: #2E2B41;
+}
+
+a {
+    text-decoration: none;
+    color: #686D76;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form div.incorrect label {
+    background-color: #f06272;
+}
+
+form div.incorrect input {
+    border-color: #f06272;
+}
+
+#error-message {
+    color: #f06272;
+}
+
+.hidden {
+    display: none;
+}
+
+#signup-error-message,
+#login-error-message {
+    color: red;
+    margin: 10px 0;
+}
+
+.error-message {
+    color: red; 
+    font-size: 14px;
+    margin-top: 10px; 
+}
+  

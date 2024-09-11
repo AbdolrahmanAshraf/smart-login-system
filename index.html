@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+
+    <div class="main-section rounded">
+        <div id="login-section">
+            <h1>Login</h1>
+            <p id="login-error-message"></p>
+            <form id="login-form" onsubmit="handleLogin(event)">
+                <div>
+                    <label for="login-email-input"><i class="fa-solid fa-at"></i></label>
+                    <input type="text" name="email" id="login-email-input" placeholder="Email" required>
+                </div>
+                <div>
+                    <label for="login-password-input"><i class="fa-solid fa-lock"></i></label>
+                    <input type="password" name="password" id="login-password-input" placeholder="Password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <button id="show-signup" onclick="showSignup()">Don't have an account? Signup</button>
+        </div>
+
+        <div id="signup-section" style="display: none;">
+            <h1>Signup</h1>
+            <p id="signup-error-message" class="error-message"></p> 
+            <form id="signup-form" onsubmit="handleSignup(event)">
+                <div>
+                    <label for="firstname-input"><i class="fa-solid fa-user"></i></label>
+                    <input type="text" name="firstname" id="firstname-input" placeholder="Firstname" required>
+                </div>
+                <div>
+                    <label for="signup-email-input"><i class="fa-solid fa-at"></i></label>
+                    <input type="text" name="email" id="signup-email-input" placeholder="Email" required>
+                </div>
+                <div>
+                    <label for="signup-password-input"><i class="fa-solid fa-lock"></i></label>
+                    <input type="password" name="password" id="signup-password-input" placeholder="Password" required>
+                </div>
+                <div>
+                    <label for="repeat-password-input"><i class="fa-solid fa-lock"></i></label>
+                    <input type="password" name="repeat-password" id="repeat-password-input"
+                        placeholder="Repeat Password" required>
+                </div>
+                <button type="submit">Signup</button>
+            </form>
+            <button id="show-login" onclick="showLogin()">Already have an account? Login</button>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+
+    
+</body>
+
+</html>
